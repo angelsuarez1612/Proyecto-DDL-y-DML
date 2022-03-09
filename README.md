@@ -1,4 +1,4 @@
-<h3>Tabla Director</h3>
+### Tabla Director
 
 | DIRECTOR     |                          |                                                    |
 |--------------|--------------------------|----------------------------------------------------|
@@ -7,7 +7,7 @@
 | Apellidos    | Cadena de caracteres, 20 | Iniciales en mayúsculas                            |
 | Nacionalidad | Cadena de caracteres, 12 | Admite: Español, Alemán, Italiano, Francés, Inglés |
 
-<h3>Tabla Película</h3>
+### Tabla Película
 
 | Película        |                          |                         |
 |-----------------|--------------------------|-------------------------|
@@ -18,7 +18,7 @@
 | Nacionalidad    | Cadena de caracteres, 12 |                         |
 | Fecha_estreno   | Fecha                    | A partir del año 2000   |
 
-<h3>Tabla Ejemplar</h3>
+### Tabla Ejemplar
 
 | Ejemplar             |                          |                          |
 |----------------------|--------------------------|--------------------------|
@@ -26,7 +26,7 @@
 | **_fk_ID_pelicula_** | Cadena de caracteres, 3  |                          |
 | Estado               | Cadena de caracteres, 10 | Alquilado o no alquilado |
 
-<h3>Tabla Alquila</h3>
+### Tabla Alquila
 
 | Alquila               |                         |         |
 |-----------------------|-------------------------|---------|
@@ -35,7 +35,7 @@
 | **f_alquiler**        | Fecha                   |         |
 | f_devolucion          | Fecha                   | No nulo |
 
-<h3>Tabla Socio</h3>
+### Tabla Socio
 
 | Socio     |                          |                         |
 |-----------|--------------------------|-------------------------|
@@ -45,7 +45,7 @@
 | Dirección | Cadena de caracteres, 30 | No nulo                 |
 | Teléfono  | Cadena de caracteres, 9  |                         |
 
-<h3>Tabla Actua</h3>
+### Tabla Actua
 
 | Actua             |                         |                                        |
 |-------------------|-------------------------|----------------------------------------|
@@ -53,7 +53,7 @@
 | **_DNI_actor_**   | Cadena de caracteres, 9 |                                        |
 | Prota (sí/no)     | Cadena de caracteres, 5 | Solo admite sí ó no. Por defecto es no |
 
-<h3>Tabla Actores</h3>
+### Tabla Actores
 
 | Actores      |                          |                         |
 |--------------|--------------------------|-------------------------|
@@ -63,3 +63,10 @@
 | Nacionalidad | Cadena de caracteres, 12 |                         |
 | Sexo         | Cadena de caracteres, 5  | Solo admite H ó M       |
 | Teléfono     | Cadena de caracteres, 9  | No nulo                 |
+
+**Añade las siguientes restricciones una vez hayas creado las tablas**
+- Desactiva temporalmente la restricción que afecta a la fecha de estreno
+- Los teléfonos de actores y socios no se pueden repetir
+- Añade una columna a la tabla Actores que sea el salario de cada actor
+- El ID de una película debe terminar por una vocal
+- Elimina la restricción que afecta a la productora en la tabla película

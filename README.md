@@ -1,4 +1,4 @@
-| DIRECTOR                                                                                   
+| DIRECTOR     |                          |                                                    |
 |--------------|--------------------------|----------------------------------------------------|
 | DNI          | Cadena de caracteres, 9  |                                                    |
 | Nombre       | Cadena de caracteres, 10 | Único, iniciales en mayúsculas                     |

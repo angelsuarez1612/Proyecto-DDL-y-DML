@@ -1,3 +1,5 @@
+Cada periodista escribe en una o varias revistas y una revista puede ser escrita por uno o varios periodistas, cada revista saca otras "ediciones" por así decirlo que se identifican por un ISSN. Cada revista pertenece a una única sucursal y en esas sucursales trabajan empleados. En la tabla empleados vamos a almacenar información sobre los empleados que NO son periodistas, como limpiadores, administrativos...
+
 ### Tabla Empleado
 
 | Empleado     |                          |                           |
@@ -8,6 +10,7 @@
 | Dirección    | Cadena de caracteres, 30 | Único                     |
 | F_nacimiento | Fecha                    | Debe ser mayor de 18 años |
 | Teléfono     | Cadena de caracteres, 9  |                           |
+| Nacionalidad     | Cadena de caracteres, 10  | Todo en mayúsculas                           |
 | _Sucursal_   | Cadena de caracteres, 5  |                           |
 
 ### Tabla Periodista
@@ -33,7 +36,7 @@
 | **NumReg**   | Cadena de caracteres, 10 |                                                                               |
 | Título       | Cadena de caracteres, 10 | Iniciales en mayúsculas                                                       |
 | Periodicidad | Cadena de caracteres, 15 | Uno de los siguientes valores: Semanal, quincena, mensual, trimestral o anual |
-| Tipo         | Cadena de caracteres, 20 |                                                                               |
+| Tipo         | Cadena de caracteres, 20 | Por defecto es 'Desconocido'                                                                              |
 | _Sucursal_   | Cadena de caracteres, 5  |                                                                               |
 
 ### Tabla NumRevista
@@ -52,3 +55,13 @@
 | Nombre Sucursal | Cadena de caracteres, 15 | Único                |
 | Dirección       | Cadena de caracteres, 20 | No puede estar vacío |
 | Teléfono        | Cadena de caracteres, 9  |                      |
+
+### Añade las siguientes restricciones una vez hayas creado las tablas:
+- Desactiva temporalmente la restricción que afecta a los títulos de las revistas
+- Elimina la restricción que afecta a la dirección de cada sucursal
+- Añade una nueva columna a la tabla sucursal en la que se guardará la fecha de fundación de cada sucursal
+- Actualiza la sucursal en la que trabajan los empleados cuya nacionalidad sea 'ESPAÑOLA'
+- Elimina la columna FechaPublicacion de la tabla NumRevista
+- Añade una restricción sobre los ISSN de la tabla NumRevista de manera que los datos introducidos sigan el siguiente formato: 4 números, un guión, 4 números
+- Los apellidos de los periodistas no se pueden repetir
+- La fecha de nacimiento de los empleados y periodistas no pueden estar en blanco

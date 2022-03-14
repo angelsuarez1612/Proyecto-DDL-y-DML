@@ -10,6 +10,7 @@ Cada periodista escribe en una o varias revistas y una revista puede ser escrita
 | Dirección    | Cadena de caracteres, 30 | Único                     |
 | F_nacimiento | Fecha                    | Debe ser mayor de 18 años |
 | Teléfono     | Cadena de caracteres, 9  |                           |
+| Apellidos    | Cadena de caracteres, 15 |    |
 | Nacionalidad     | Cadena de caracteres, 10  | Todo en mayúsculas                           |
 | _Sucursal_   | Cadena de caracteres, 5  |                           |
 

@@ -52,12 +52,3 @@
 | Nombre Sucursal | Cadena de caracteres, 15 | Único                |
 | Dirección       | Cadena de caracteres, 20 | No puede estar vacío |
 | Teléfono        | Cadena de caracteres, 9  |                      |
-
-
-
-**Añade las siguientes restricciones una vez hayas creado las tablas**
-- Desactiva temporalmente la restricción que afecta a la fecha de estreno
-- Los teléfonos de actores y socios no se pueden repetir
-- Añade una columna a la tabla Actores que sea el salario de cada actor
-- El ID de una película debe terminar por una vocal
-- Elimina la restricción que afecta a la productora en la tabla película

@@ -66,3 +66,4 @@ Cada periodista escribe en una o varias revistas y una revista puede ser escrita
 - Añade una restricción sobre los ISSN de la tabla NumRevista de manera que los datos introducidos sigan el siguiente formato: 4 números, un guión, 4 números
 - Los apellidos de los periodistas no se pueden repetir
 - La fecha de nacimiento de los empleados y periodistas no pueden estar en blanco
+- Activa nuevamente la restricción que desactivamos referente a los títulos de las revistas

@@ -6,8 +6,8 @@ Cada periodista escribe en una o varias revistas y una revista puede ser escrita
 |--------------|--------------------------|---------------------------|
 | **DNI**      | Cadena de caracteres, 10 |                           |
 | Nombre       | Cadena de caracteres, 15 | Iniciales en mayúsculas   |
-| Apellidos    | Cadena de caracteres, 20 | Iniciales en mayúsculas   |
-| Dirección    | Cadena de caracteres, 30 | Único                     |
+| Apellidos    | Cadena de caracteres, 20 | Iniciales en mayúsculas, Único   |
+| Dirección    | Cadena de caracteres, 30 |                      |
 | F_nacimiento | Fecha                    | Debe ser mayor de 18 años |
 | Teléfono     | Cadena de caracteres, 9  |                           |
 | Puesto    | Cadena de caracteres, 15 |    |
@@ -67,3 +67,5 @@ Cada periodista escribe en una o varias revistas y una revista puede ser escrita
 - Los apellidos de los periodistas no se pueden repetir
 - La fecha de nacimiento de los empleados y periodistas no pueden estar en blanco
 - Activa nuevamente la restricción que desactivamos referente a los títulos de las revistas
+- El DNI de los empleados y de los periodista está compuesto por 8 números y termina por una letra mayúscula
+- El título de la revista no puede tener menos de 4 caracteres

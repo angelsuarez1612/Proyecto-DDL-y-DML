@@ -43,7 +43,7 @@ Cada periodista escribe en una o varias revistas y una revista puede ser escrita
 ### Tabla NumRevista
 | NumRevista       |                          |                      |
 |------------------|--------------------------|----------------------|
-| **_NumReg_**     | Cadena de caracteres, 10 |                      |
+| _NumReg_     | Cadena de caracteres, 10 |                      |
 | **ISSN**         | Cadena de caracteres, 9  |                      |
 | NumPag           | Numérico, 4              | Debe ser mayor de 0  |
 | FechaPublicacion | Fecha                    | En el siglo 21       |

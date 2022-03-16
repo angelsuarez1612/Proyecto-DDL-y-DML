@@ -28,7 +28,7 @@ Cada periodista escribe en una o varias revistas y una revista puede ser escrita
 ### Tabla Escribe
 | Escribe              |                          |   |
 |----------------------|--------------------------|---|
-| **_ ISSN_**         | Cadena de caracteres, 10 |   |
+| **_ISSN_**         | Cadena de caracteres, 10 |   |
 | **_DNI_Periodista_** | Cadena de caracteres, 9  |   |
 
 ### Tabla Revista

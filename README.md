@@ -6,7 +6,7 @@ Cada periodista escribe en una o varias revistas y una revista puede ser escrita
 |--------------|--------------------------|---------------------------|
 | **DNI**      | Cadena de caracteres, 10 |                           |
 | Nombre       | Cadena de caracteres, 15 | Iniciales en mayúsculas   |
-| Apellidos    | Cadena de caracteres, 20 | Iniciales en mayúsculas, Único   |
+| Apellidos    | Cadena de caracteres, 20 | Iniciales en mayúsculas   |
 | Dirección    | Cadena de caracteres, 30 |                      |
 | F_nacimiento | Fecha                    | Debe ser mayor de 18 años |
 | Teléfono     | Cadena de caracteres, 9  |                           |

@@ -1,10 +1,12 @@
-Cada periodista escribe en una o varias revistas y una revista puede ser escrita por uno o varios periodistas, cada revista saca otras "ediciones" por así decirlo que se identifican por un ISSN. Cada revista pertenece a una única sucursal y en esas sucursales trabajan empleados. En la tabla empleados vamos a almacenar información sobre los empleados que NO son periodistas, como limpiadores, administrativos...
+El proyecto va sobre revistas, ejemplares de revistas, periodistas...
+Cada revista tiene su propia sucursal y para cada revista trabajan empleados (que no son periodistas). Las revistas van sacando ediciones ó en este caso Numero de revista (NumRevista) y cada edición es escrita por uno o varios periodistas. Los periodistas pueden escribir en una o en varias ediciones de revista
 
 ### Tabla Empleado
 
 | Empleado     |                          |                           |
 |--------------|--------------------------|---------------------------|
 | **DNI**      | Cadena de caracteres, 10 |                           |
+| _NumReg_   | Cadena de caracteres, 10  |                           |
 | Nombre       | Cadena de caracteres, 15 | Iniciales en mayúsculas   |
 | Apellidos    | Cadena de caracteres, 20 | Iniciales en mayúsculas   |
 | Dirección    | Cadena de caracteres, 30 |                      |
@@ -12,7 +14,6 @@ Cada periodista escribe en una o varias revistas y una revista puede ser escrita
 | Teléfono     | Cadena de caracteres, 9  |                           |
 | Puesto    | Cadena de caracteres, 15 |    |
 | Nacionalidad     | Cadena de caracteres, 10  | Todo en mayúsculas                           |
-| _Sucursal_   | Cadena de caracteres, 5  |                           |
 
 ### Tabla Periodista
 | Periodista   |                          |                                                                  |
@@ -43,8 +44,8 @@ Cada periodista escribe en una o varias revistas y una revista puede ser escrita
 ### Tabla NumRevista
 | NumRevista       |                          |                      |
 |------------------|--------------------------|----------------------|
-| _NumReg_     | Cadena de caracteres, 10 |                      |
 | **ISSN**         | Cadena de caracteres, 9  |                      |
+| _NumReg_     | Cadena de caracteres, 10 |                      |
 | NumPag           | Numérico, 4              | Debe ser mayor de 0  |
 | FechaPublicacion | Fecha                    | En el siglo 21       |
 | CantVendidas     | Numérico, 7              | No puede estar vacío |

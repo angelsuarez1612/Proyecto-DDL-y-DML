@@ -46,6 +46,7 @@ Cada revista tiene su propia sucursal y para cada revista trabajan empleados (qu
 |----------------------|--------------------------|---|
 | **_ISSN_**         | Cadena de caracteres, 10 |   |
 | **_DNI_Periodista_** | Cadena de caracteres, 9  |   |
+| Título | Cadena de caracteres, 15  |   |
 
 ### Tabla Periodista
 | Periodista   |                          |                                                                  |
@@ -69,5 +70,6 @@ Cada revista tiene su propia sucursal y para cada revista trabajan empleados (qu
 - Los apellidos de los periodistas no se pueden repetir
 - La fecha de nacimiento de los empleados y periodistas no pueden estar en blanco
 - Activa nuevamente la restricción que desactivamos referente a los títulos de las revistas
-- El DNI de los empleados y de los periodista está compuesto por 8 números y termina por una letra mayúscula
+- El DNI de los empleados y de los periodistas está compuesto por 8 números y termina por una letra mayúscula
 - El título de la revista no puede tener menos de 4 caracteres
+- El identificador de las revistas son 6 números y ninguna letra o símbolo

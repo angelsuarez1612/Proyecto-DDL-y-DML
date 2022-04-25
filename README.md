@@ -64,7 +64,6 @@ Cada revista tiene su propia sucursal y para cada revista trabajan empleados (qu
 - Desactiva temporalmente la restricción que afecta a los títulos de las revistas
 - Elimina la restricción que afecta a la dirección de cada sucursal
 - Añade una nueva columna a la tabla sucursal en la que se guardará la fecha de fundación de cada sucursal
-- Actualiza la sucursal en la que trabajan los empleados cuya nacionalidad sea 'ESPAÑOLA'
 - Elimina la columna FechaPublicacion de la tabla NumRevista
 - Añade una restricción sobre los ISSN de la tabla NumRevista de manera que los datos introducidos sigan el siguiente formato: 4 números, un guión, 4 números
 - Los apellidos de los periodistas no se pueden repetir

@@ -12,14 +12,14 @@ Cada revista tiene su propia sucursal y para cada revista trabajan empleados (qu
 | Dirección    | Cadena de caracteres, 30 |                      |
 | F_nacimiento | Fecha                    | No puede cumplir años en febrero, marzo o abril |
 | Teléfono     | Cadena de caracteres, 9  |                           |
-| Puesto    | Cadena de caracteres, 15 |    |
-| Nacionalidad     | Cadena de caracteres, 10  | Todo en mayúsculas                           |
+| Puesto    | Cadena de caracteres, 35 |    |
+| Nacionalidad     | Cadena de caracteres, 20  | Todo en mayúsculas                           |
 
 ### Tabla Revista
 | Revista      |                          |                                                                               |
 |--------------|--------------------------|-------------------------------------------------------------------------------|
 | **NumReg**   | Cadena de caracteres, 10 |                                                                               |
-| Título       | Cadena de caracteres, 10 | Iniciales en mayúsculas                                                       |
+| Título       | Cadena de caracteres, 25 | Iniciales en mayúsculas                                                       |
 | Periodicidad | Cadena de caracteres, 15 | Uno de los siguientes valores: Semanal, quincena, mensual, trimestral o anual |
 | Tipo         | Cadena de caracteres, 20 | Por defecto es 'Desconocido'                                                                              |
 | _Sucursal_   | Cadena de caracteres, 5  |                                                                               |
@@ -29,7 +29,7 @@ Cada revista tiene su propia sucursal y para cada revista trabajan empleados (qu
 |-----------------|--------------------------|----------------------|
 | **Código**      | Cadena de caracteres, 5  |                      |
 | Nombre Sucursal | Cadena de caracteres, 15 | Único                |
-| Dirección       | Cadena de caracteres, 20 | No puede estar vacío |
+| Dirección       | Cadena de caracteres, 40 | No puede estar vacío |
 | Teléfono        | Cadena de caracteres, 9  |                      |
 
 ### Tabla NumRevista
@@ -46,7 +46,7 @@ Cada revista tiene su propia sucursal y para cada revista trabajan empleados (qu
 |----------------------|--------------------------|---|
 | **_ISSN_**         | Cadena de caracteres, 10 |   |
 | **_DNI_Periodista_** | Cadena de caracteres, 9  |   |
-| Título | Cadena de caracteres, 15  |   |
+| Título | Cadena de caracteres, 35  |   |
 
 ### Tabla Periodista
 | Periodista   |                          |                                                                  |

@@ -1,9 +1,9 @@
-INSERT INTO Sucursal VALUES ('1','TodDep','Plaza Del Río, 143, 79º A','956735622');
-INSERT INTO Sucursal VALUES ('2','InfoMund','Plaça Gastélum, 3, 55º 0º','872634563');
-INSERT INTO Sucursal VALUES ('3','SucPar','Avinguda Jurado, 71, 21º A','673253453');
-INSERT INTO Sucursal VALUES ('4','TodCien','Plaza Silvia, 896, 6º A','783546352');
-INSERT INTO Sucursal VALUES ('5','EstudiosOnline','Plaza César, 23, 0º F','927243563');
-INSERT INTO Sucursal VALUES ('6','Capital','Plaza España, 6','935647837');
+INSERT INTO Sucursal VALUES ('1','TodDep','Plaza Del Río, 143, 79º A','956735622','1975-9-4');
+INSERT INTO Sucursal VALUES ('2','InfoMund','Plaça Gastélum, 3, 55º 0º','872634563','1977-8-3');
+INSERT INTO Sucursal VALUES ('3','SucPar','Avinguda Jurado, 71, 21º A','673253453','1980-3-3');
+INSERT INTO Sucursal VALUES ('4','TodCien','Plaza Silvia, 896, 6º A','783546352','1979-12-12');
+INSERT INTO Sucursal VALUES ('5','EstudiosOnline','Plaza César, 23, 0º F','927243563','1987-1-1');
+INSERT INTO Sucursal VALUES ('6','Capital','Plaza España, 6','935647837','1987-1-7');
 
 INSERT INTO Revista VALUES ('REV-1','Vistac','Semanal','Deportiva','1');
 INSERT INTO Revista VALUES ('REV-2','Alumnet','Anual','Online','5');

@@ -10,7 +10,7 @@ Cada revista tiene su propia sucursal y para cada revista trabajan empleados (qu
 | Nombre       | Cadena de caracteres, 15 | Iniciales en mayúsculas   |
 | Apellidos    | Cadena de caracteres, 20 | Iniciales en mayúsculas   |
 | Dirección    | Cadena de caracteres, 30 |                      |
-| F_nacimiento | Fecha                    | Debe ser mayor de 18 años y no puede cumplir años en febrero, marzo o abril |
+| F_nacimiento | Fecha                    | No puede cumplir años en febrero, marzo o abril |
 | Teléfono     | Cadena de caracteres, 9  |                           |
 | Puesto    | Cadena de caracteres, 15 |    |
 | Nacionalidad     | Cadena de caracteres, 10  | Todo en mayúsculas                           |

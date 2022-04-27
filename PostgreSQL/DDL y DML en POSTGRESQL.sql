@@ -2,7 +2,7 @@ CREATE TABLE Sucursal
 (
     cod_sucursal varchar(5),
     nombre_sucursal varchar(15),
-    direccion varchar(20),
+    direccion varchar(40),
     telefono varchar(9),
     CONSTRAINT CK_COD_SUCURSAL_prim PRIMARY KEY (cod_sucursal),
     CONSTRAINT CK_nombre_sucursal UNIQUE (nombre_sucursal),
@@ -12,7 +12,7 @@ CREATE TABLE Sucursal
 CREATE TABLE Revista
 (
     numreg varchar(10),
-    titulo varchar(10),
+    titulo varchar(25),
     periocidad varchar(15),
     tipo varchar(20) DEFAULT 'Desconocido',
     sucursal varchar(5),
@@ -31,8 +31,8 @@ CREATE TABLE Empleado
     direccion varchar(30),
     f_nacimiento timestamp,
     telefono varchar(9),
-    puesto varchar(15),
-    nacionalidad varchar(10),
+    puesto varchar(35),
+    nacionalidad varchar(20),
     CONSTRAINT CK_DNI_EMP_prim PRIMARY KEY (DNI_Empleado),
     CONSTRAINT CK_FK_numreg_emp FOREIGN KEY (numreg) REFERENCES Revista(numreg),
     CONSTRAINT CK_nombre_emp1 CHECK (nombre ~ '^[A-Z]'),
@@ -75,7 +75,7 @@ CREATE TABLE Escribe
 (
     ISSN varchar(10),
     DNI_Periodista varchar(9),
-    titulo varchar(15),
+    titulo varchar(35),
     CONSTRAINT CK_prim_numrevista PRIMARY KEY (ISSN,DNI_Periodista),
     CONSTRAINT CK_FK_ISSN_esc FOREIGN KEY (ISSN) REFERENCES NumRevista(ISSN),
     CONSTRAINT CK_DNIperiodista_esc FOREIGN KEY (DNI_Periodista) REFERENCES Periodista(DNI_Periodista)

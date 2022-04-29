@@ -11,11 +11,11 @@ de fechas y de conversión, distinct, alias de columnas y tablas  y ordenaciones
 - Crea una vista con las revistas que tengan más de una edición junto con el número de ediciones que tienen
 
 ### Subconsultas
-- Lista todos los empleados junto con el nombre de la sucursal para la que trabajan (ordena alfabéticamente)
+- 
 - Muestra el ISSN de las revistas que ha escrito la periodista Fabiola Galindo Real
 
 ### Combinaciones de tablas
-- Muestra el nombre de los empleados junto con el nombre de la revista para la que trabajan
+- Lista todos los empleados junto con el nombre de la sucursal para la que trabajan (ordena alfabéticamente)
 
 ### Inserción de registros. Consultas de datos anexados
 - Inserta un nuevo periodista con DNI 83655525L, llamado Luis Reyes Sánchez, su dirección es Camino Víctor, 30, 13º A; Nació el 9 de enero del 93, su número de teléfono es 635245777  y su especialidad es la misma que la de Fidel Rubio Pereira

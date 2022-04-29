@@ -8,7 +8,7 @@ de fechas y de conversión, distinct, alias de columnas y tablas  y ordenaciones
 - Muestra las ediciones de revistas cuyo número de cantidades vendidas sea mayor de 1000
 
 ### Vistas
-- Crea una vista con las revistas que tengan más de una edición en el año 2021 junto con el número de ediciones que tienen en ese año
+- Crea una vista con las revistas que tengan más de una edición junto con el número de ediciones que tienen
 
 ### Subconsultas
 - Lista todos los empleados junto con el nombre de la sucursal para la que trabajan (ordena alfabéticamente)

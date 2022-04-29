@@ -12,7 +12,7 @@ de fechas y de conversión, distinct, alias de columnas y tablas  y ordenaciones
 
 ### Subconsultas
 - Lista todos los empleados junto con el nombre de la sucursal para la que trabajan (ordena alfabéticamente)
-- Muestra el nombre de las revistas que ha escrito la periodista Fabiola Galindo Real
+- Muestra el ISSN de las revistas que ha escrito la periodista Fabiola Galindo Real
 
 ### Combinaciones de tablas
 - Muestra el nombre de los empleados junto con el nombre de la revista para la que trabajan

@@ -1,4 +1,3 @@
-
 INSERT INTO Sucursal VALUES ('1','TodDep','Plaza Del Río, 143, 79º A','956735622','1975-9-4');
 INSERT INTO Sucursal VALUES ('2','InfoMund','Plaça Gastélum, 3, 55º 0º','872634563','1977-8-3');
 INSERT INTO Sucursal VALUES ('3','SucPar','Avinguda Jurado, 71, 21º A','673253453','1980-3-3');
@@ -11,9 +10,10 @@ INSERT INTO Revista VALUES ('REV-2','Alumnet','Anual','Online','5');
 INSERT INTO Revista VALUES ('REV-3','Bajo La Lupa','Mensual','Científica','4');
 INSERT INTO Revista VALUES ('REV-4','Punto De Vista','Mensual','Informativa','2');
 INSERT INTO Revista VALUES ('REV-5','Enigmas','Semanal','Desconocido','3');
+INSERT INTO Revista VALUES ('REV-6','Recibiendo','Anual','Desconocido','6');
 
 INSERT INTO Empleado VALUES ('29530596E','REV-1','Angel','Suárez Pérez','Fuengirola, 4','2003-12-16','688437812','Director editorial','ALEMÁN');
-INSERT INTO Empleado VALUES ('31001887A','REV-1','Ramón','Ortega Fernández','Praza Portillo, 62, Bajos','2003-12-16-12','733562134','Editor ejecutivo','ITALIANO');
+INSERT INTO Empleado VALUES ('31001887A','REV-1','Ramón','Ortega Fernández','Praza Portillo, 62, Bajos','2003-12-16-12','633562134','Editor ejecutivo','ITALIANO');
 INSERT INTO Empleado VALUES ('89231059Y','REV-3','Jose','Silva Bendito','Travessera Anna, 176, Bajo 4º','2000-1-14-1','656374524','Corrector','ESPAÑOL');
 INSERT INTO Empleado VALUES ('54405050E','REV-5','Andres','Jiménez Palomar','Passeig Izan, 250, 8º A','1997-8-8','689767555','Director creativo','AUSTRALIANO');
 INSERT INTO Empleado VALUES ('82456851B','REV-2','Raúl','González García','Rúa Alejandra, 9, 5º','1990-5-5','634253422','Corrector','AUSTRALIANO');¡
@@ -34,6 +34,7 @@ INSERT INTO Periodista VALUES ('99972654T','Fabiola','Galindo Real','Camino Jes�
 INSERT INTO Periodista VALUES ('28763572P','Fidel','Rubio Pereira','Plaza Sandra, 07, 13º F','1992-11-13','653456789','Investigación');
 INSERT INTO Periodista VALUES ('22299963D','Abel','Vivas Huerta','Calle Madrigal, 67, Bajos','1999-1-6','626738546','Cultural y sociocultural');
 INSERT INTO Periodista VALUES ('63646532I','Jose Jesus','Lillo Gil','Avinguda Mares, 1, 95º B','2002-2-16','672523489','Virtual');
+INSERT INTO Periodista VALUES ('78362533Y','Rafael','Jimenez Correa','Calle Patricia, 222, 07º E','2001-8-8','677835522','Virtual');
 
 INSERT INTO Escribe VALUES ('627-888','22299963D','Curiosidades del mundo');
 INSERT INTO Escribe VALUES ('927-837','86534253R','Tácticas deportivas');

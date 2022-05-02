@@ -32,7 +32,7 @@ WHERE dni_periodista = (SELECT dni_periodista
 SELECT nombre as "Nombre", apellidos as "Apellido",nombre_sucursal
 FROM Empleado e,Sucursal s,Revista r 
 WHERE e.numreg = r.numreg AND r.sucursal = s.cod_sucursal 
-ORDER BY "NombreCompleto";
+ORDER BY nombre;
 
 -- INSERCIÓN DE REGISTROS
 -- Inserta un nuevo periodista con DNI 83655525L, llamado Luis Reyes Sánchez, su dirección es Camino Víctor, 30, 13º A; Nació el 9 de enero del 93, su número de teléfono es 635245777  y su especialidad es la misma que la de Fidel Rubio Pereira

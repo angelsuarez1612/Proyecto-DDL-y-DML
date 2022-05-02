@@ -14,7 +14,7 @@ INSERT INTO Revista VALUES ('REV-5','Enigmas','Semanal','Desconocido','3');
 INSERT INTO Empleado VALUES ('29530596E','REV-1','Angel','Suárez Pérez','Fuengirola, 4','2003-12-16','688437812','Director editorial','ALEMÁN');
 INSERT INTO Empleado VALUES ('31001887A','REV-1','Ramón','Ortega Fernández','Praza Portillo, 62, Bajos','2003-12-16','633562134','Editor ejecutivo','ITALIANO');
 INSERT INTO Empleado VALUES ('89231059Y','REV-3','Jose','Silva Bendito','Travessera Anna, 176, Bajo 4º','2000-1-14','656374524','Corrector','ESPAÑOL');
-INSERT INTO Empleado VALUES ('54405050E','REV-5','Andrés','Jiménez Palomar','Passeig Izan, 250, 8º A','1997-8-8','689767555','Director creativo','AUSTRALIANO');
+INSERT INTO Empleado VALUES ('54405050E','REV-5','Andres','Jiménez Palomar','Passeig Izan, 250, 8º A','1997-8-8','689767555','Director creativo','AUSTRALIANO');
 INSERT INTO Empleado VALUES ('82456851B','REV-2','Raúl','González García','Rúa Alejandra, 9, 5º','1990-5-5','634253422','Corrector','AUSTRALIANO');
 
 INSERT INTO NumRevista VALUES ('444-232','REV-1','120','921');

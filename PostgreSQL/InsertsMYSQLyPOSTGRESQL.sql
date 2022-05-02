@@ -33,6 +33,7 @@ INSERT INTO Periodista VALUES ('99972654T','Fabiola','Galindo Real','Camino Jes�
 INSERT INTO Periodista VALUES ('28763572P','Fidel','Rubio Pereira','Plaza Sandra, 07, 13º F','1992-11-13','653456789','Investigación');
 INSERT INTO Periodista VALUES ('22299963D','Abel','Vivas Huerta','Calle Madrigal, 67, Bajos','1999-1-6','626738546','Cultural y sociocultural');
 INSERT INTO Periodista VALUES ('63646532I','Jose Jesus','Lillo Gil','Avinguda Mares, 1, 95º B','2002-2-16','672523489','Virtual');
+INSERT INTO Periodista VALUES ('78362533Y','Rafael','Jimenez Correa','Calle Patricia, 222, 07º E','2001-8-8','677835522','Virtual');
 
 INSERT INTO Escribe VALUES ('627-888','22299963D','Curiosidades del mundo');
 INSERT INTO Escribe VALUES ('927-837','86534253R','Tácticas deportivas');

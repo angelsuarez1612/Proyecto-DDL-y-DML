@@ -25,7 +25,7 @@ de fechas y de conversión, distinct, alias de columnas y tablas  y ordenaciones
 - Actualiza la revista para la que trabajan los empleados cuya nacionalidad sea española, de forma que pasen a trabajar automáticamente a 'REV-2'
 
 ### Borrado de registros. Consultas de eliminación.
-- 
+- Elimina de la tabla numrevista la edición de revista que menos cantidad ha vendido, recuerda que esa edición se encuentra también en la tabla escribe, por lo tanto debes eliminar el registro también de esa tabla
 
 ### Group by y having.
 - Muestra el nombre y año de nacimiento (solo el año) del periodista que haya escrito el mayor número de ediciones de revista
@@ -33,12 +33,12 @@ de fechas y de conversión, distinct, alias de columnas y tablas  y ordenaciones
 - Muestra las revistas cuyas ediciones tienen una media de páginas mayor de 99 junto con el número de ediciones de cada una
 
 ### Outer joins. Combinaciones externas.
-- Muestra el número de ediciones de revista que pertenecen a una revista (incluyendo aquellas que no tienen ediciones) junto el nombre de la revista ordenadas según el número de cantidades vendidas total de mayor a menor
+- Muestra el número de ediciones de revista que pertenecen a una revista (incluyendo aquellas que no tienen ediciones) junto el nombre de la revista y el número total de cantidades vendidas ordenadas según el número de ediciones de mayor a menor
 - Mostrar todas las sucursales junto su número de empleados incluyendo aquellas que no tienen empleados
 
 ### Consultas con operadores de conjuntos.
 - Muestra el ISSN de las ediciones de revistas de las que se han vendido más de 1000 ediciones y el título de las revistas que son científicas
-- Muestra el periodista especializado en cultural y sociocultural que más ediciones de revista ha escrito
+- Haz una consulta con operadores de conjuntos que muestre los periodistas que no han escrito ninguna edición de revista
 
 ### Subconsultas correlacionadas.
 - Muestra la edición de revista que más unidades ha vendido de cada revista

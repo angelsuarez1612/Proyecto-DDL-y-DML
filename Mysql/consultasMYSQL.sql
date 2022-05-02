@@ -42,7 +42,6 @@ SELECT '83655525L','Luis','Reyes Sanchez','Camino Víctor, 30,13º A',
 FROM Periodista WHERE nombre = 'Fidel' AND apellidos = 'Rubio Pereira';
 
 -- Crea una nueva revista que tenga como NumReg 'REV-6', nombre Farandulería y sucursal 6, el resto de datos serán los mismos que en la revista Enigmas
--- (NO FUNCIONA)
 INSERT INTO Revista SELECT 'REV-6','Faranduleria',periocidad,tipo,'6' 
 FROM Revista WHERE titulo = 'Enigmas';
 

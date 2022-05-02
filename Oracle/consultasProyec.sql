@@ -1,6 +1,6 @@
 --CONSULTAS SENCILLAS
 -- Muestra los nombres de los periodistas junto con su especialidad
-SELECT nombre || ' ' || apellidos as "NombreCompleto",especialista FROM Periodista;
+SELECT nombre || ' ' || apellidos as "NombreCompleto",especialista as "Especialidad" FROM Periodista;
 
 -- Muestra las ediciones de revistas cuyo número de cantidades vendidas sea mayor de 1000
 SELECT issn FROM NumRevista WHERE cantvendidas >= 1000;
@@ -46,14 +46,16 @@ FROM revista WHERE titulo = 'Enigmas';
 
 -- MODIFICACIÓN DE REGISTROS
 -- Actualiza la revista para la que trabajan los empleados cuya nacionalidad sea española, de forma que pasen a trabajar automáticamente a 'REV-2'
-UPDATE empleado SET numreg = 'REV-2' WHERE nacionalidad = 'ESPAÑOL' OR nacionalidad = 'ESPAÑOLA';
+UPDATE empleado SET numreg = 'REV-2'
+WHERE nacionalidad = 'ESPAÑOL' OR nacionalidad = 'ESPAÑOLA';
 
 -- BORRADO DE REGISTROS
--- 10
-
+-- Elimina de la tabla numrevista la edición de revista que menos cantidad ha vendido, recuerda que esa edición se encuentra también en la tabla escribe, por lo tanto debes eliminar el registro también de esa tabla
+DELETE FROM escribe WHERE ISSN = (SELECT ISSN FROM numrevista WHERE cantvendidas = (SELECT min(cantvendidas) FROM numrevista));
+DELETE FROM numrevista WHERE cantvendidas = (SELECT min(cantvendidas) FROM numrevista);
 
 -- GROUP BY Y HAVING
--- Muestra el nombre y año de nacimiento (solo el año) del periodista que haya escrito el mayor número de ediciones de revista
+-- Muestra el nombre y año de nacimiento (solo el año) del periodista que haya escrito el mayor número de ediciones de revista (en caso de haber dos o más que hayan escrito el mismo número de ediciones, deben aparecer todos)
 SELECT nombre ||' '|| apellidos as "NombreCompleto",
 EXTRACT(YEAR FROM f_nacimiento) as "Año de nacimiento"
 FROM periodista WHERE dni_periodista IN 
@@ -62,7 +64,7 @@ FROM periodista WHERE dni_periodista IN
                                     HAVING count(dni_periodista) = (SELECT max(count(dni_periodista)) 
                                                                     FROM Escribe GROUP BY dni_periodista));
                                 
--- Muestra todos los periodistas menores de 28 años que no han escrito menos de 2 ediciones de revistas
+-- Muestra todos los periodistas menores de 28 años que han escrito menos de 2 ediciones de revistas
 select * FROM periodista WHERE months_between(sysdate,f_nacimiento) < 336 
 and dni_periodista IN 
                    (SELECT dni_periodista 
@@ -74,28 +76,30 @@ SELECT titulo as "Revista",avg(numpag) as "Media de págs",count(*) as "Num. Edi
 WHERE r.numreg = n.numreg GROUP BY titulo HAVING avg(numpag) > 99;
 
 -- OUTER JOINS
--- Muestra el número de ediciones de revista que pertenecen a una revista (incluyendo aquellas que no tienen ediciones) junto el nombre de la revista ordenadas según el número de cantidades vendidas total de mayor a menor
+-- Muestra el número de ediciones de revista que pertenecen a una revista (incluyendo aquellas que no tienen ediciones) junto el nombre de la revista y el número total de cantidades vendidas ordenadas según el número de ediciones de mayor a menor
 SELECT titulo as "Revista",count(n.numreg) as "Num Ediciones",sum(cantvendidas) as "Cantidades Vendidas" 
 FROM revista r left join numrevista n ON r.numreg = n.numreg 
-GROUP BY r.titulo ORDER BY sum(cantvendidas) desc;
+GROUP BY r.titulo ORDER BY count(n.numreg) desc;
 
 -- Mostrar todas las sucursales junto su número de empleados incluyendo aquellas que no tienen empleados
-SELECT nombre_sucursal,count(r.sucursal) 
-FROM empleado e,revista r left join sucursal s ON r.sucursal = s.cod_sucursal
- WHERE e.numreg = r.numreg GROUP BY nombre_sucursal ORDER BY count(r.sucursal) desc;
+SELECT nombre_sucursal as "Sucursal",count(e.numreg) as "Número de Empleados"
+FROM revista r left join empleado e ON e.numreg = r.numreg, sucursal s
+WHERE sucursal = cod_sucursal GROUP BY nombre_sucursal ORDER BY count(e.numreg) desc;
 
 -- CONSULTAS CON OPERADORES DE CONJUNTOS
 -- Muestra el ISSN de las ediciones de revistas de las que se han vendido más de 1000 ediciones y el título de las revistas que son científicas
-SELECT ISSN FROM numrevista WHERE cantvendidas > 1000
+SELECT ISSN as "hola" FROM numrevista WHERE cantvendidas > 1000
 UNION
 SELECT titulo FROM revista WHERE tipo = 'Científica';
 
--- Muestra el periodista especializado en cultural y sociocultural que más ediciones de revista ha escrito
-
+-- Haz una consulta con operadores de conjuntos que muestre los periodistas que no han escrito ninguna edición de revista
+SELECT dni_periodista FROM periodista
+MINUS
+SELECT dni_periodista FROM escribe;
 
 -- SUBCONSULTAS CORRELACIONADAS
 -- Muestra la edición de revista que más unidades ha vendido de cada revista
-SELECT titulo,ISSN 
+SELECT titulo as "Revista",ISSN as "Más Vendida"
 FROM revista r, numrevista n 
 WHERE n.cantvendidas = 
                     (SELECT max(cantvendidas) 

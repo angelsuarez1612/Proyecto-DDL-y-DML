@@ -105,7 +105,5 @@ ALTER TABLE Periodista ADD CONSTRAINT CK_DNI_peri CHECK (REGEXP_LIKE(DNI_Periodi
 -- 10
 ALTER TABLE Revista ADD CONSTRAINT CK_titulo_rev2 CHECK (length(titulo) > 3);
 -- 11
-ALTER TABLE Revista ADD CONSTRAINT CK_numreg_rev CHECK (REGEXP_LIKE(numreg,'[1-9]{0,5}'));
--- 12
 ALTER TABLE Empleado ADD CONSTRAINT CK_telefono_emp CHECK (REGEXP_LIKE(telefono,'^6'));
 ALTER TABLE Periodista ADD CONSTRAINT CK_telefono_per CHECK (REGEXP_LIKE(telefono,'^6'));

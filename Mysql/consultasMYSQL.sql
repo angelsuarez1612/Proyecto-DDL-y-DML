@@ -88,7 +88,7 @@ WHERE sucursal = cod_sucursal GROUP BY nombre_sucursal ORDER BY count(e.numreg) 
 
 -- CONSULTAS CON OPERADORES DE CONJUNTOS
 -- Muestra el ISSN de las ediciones de revistas de las que se han vendido más de 1000 ediciones y el título de las revistas que son científicas
-SELECT ISSN as "hola" FROM NumRevista WHERE cantvendidas > 1000
+SELECT ISSN as "TIT" FROM NumRevista WHERE cantvendidas > 1000
 UNION
 SELECT titulo FROM Revista WHERE tipo = 'Científica';
 

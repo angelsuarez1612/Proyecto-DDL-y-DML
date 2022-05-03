@@ -105,7 +105,5 @@ ALTER TABLE Periodista ADD CONSTRAINT CK_DNI_peri CHECK (DNI_Periodista REGEXP B
 -- 10
 ALTER TABLE Revista ADD CONSTRAINT CK_titulo_rev2 CHECK (length(titulo) > 3);
 -- 11
-ALTER TABLE Revista ADD CONSTRAINT CK_numreg_rev CHECK (numreg REGEXP BINARY ('[1-9]{0,5}'));
--- 12
 ALTER TABLE Empleado ADD CONSTRAINT CK_telefono_emp CHECK (telefono REGEXP BINARY ('^6'));
 ALTER TABLE Periodista ADD CONSTRAINT CK_telefono_per CHECK (telefono REGEXP BINARY ('^6'));

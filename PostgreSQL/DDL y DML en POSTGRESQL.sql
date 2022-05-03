@@ -105,7 +105,5 @@ ALTER TABLE Periodista ADD CONSTRAINT CK_DNI_peri CHECK (DNI_Periodista ~ '[1-9]
 -- 10
 ALTER TABLE Revista ADD CONSTRAINT CK_titulo_rev2 CHECK (char_length(titulo) > 3);
 -- 11
-ALTER TABLE Revista ADD CONSTRAINT CK_numreg_rev CHECK (numreg ~ '[1-9]{0,5}');
--- 12
 ALTER TABLE Empleado ADD CONSTRAINT CK_telefono_emp CHECK (telefono ~ '^6');
 ALTER TABLE Periodista ADD CONSTRAINT CK_telefono_per CHECK (telefono ~ '^6');

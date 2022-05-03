@@ -29,7 +29,7 @@ de fechas y de conversión, distinct, alias de columnas y tablas  y ordenaciones
 
 ### Group by y having.
 - Muestra el nombre y año de nacimiento (solo el año) del periodista que haya escrito el mayor número de ediciones de revista
-- Muestra todos los periodistas menores de 28 años que no han escrito menos de 2 ediciones de revistas
+- Muestra todos los periodistas menores de 28 años que han escrito menos de 2 ediciones de revistas
 - Muestra las revistas cuyas ediciones tienen una media de páginas mayor de 99 junto con el número de ediciones de cada una
 
 ### Outer joins. Combinaciones externas.

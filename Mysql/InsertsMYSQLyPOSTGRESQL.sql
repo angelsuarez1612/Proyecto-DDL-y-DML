@@ -10,7 +10,6 @@ INSERT INTO Revista VALUES ('REV-2','Alumnet','Anual','Online','5');
 INSERT INTO Revista VALUES ('REV-3','Bajo La Lupa','Mensual','Científica','4');
 INSERT INTO Revista VALUES ('REV-4','Punto De Vista','Mensual','Informativa','2');
 INSERT INTO Revista VALUES ('REV-5','Enigmas','Semanal','Desconocido','3');
-INSERT INTO Revista VALUES ('REV-6','Recibiendo','Anual','Desconocido','6');
 
 INSERT INTO Empleado VALUES ('29530596E','REV-1','Angel','Suárez Pérez','Fuengirola, 4','2003-12-16','688437812','Director editorial','ALEMÁN');
 INSERT INTO Empleado VALUES ('31001887A','REV-1','Ramón','Ortega Fernández','Praza Portillo, 62, Bajos','2003-12-16-12','633562134','Editor ejecutivo','ITALIANO');

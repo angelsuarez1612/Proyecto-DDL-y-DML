@@ -88,24 +88,24 @@ ALTER TABLE Revista DISABLE CONSTRAINT CK_titulo_rev;
 ALTER TABLE Sucursal DROP CONSTRAINT CK_direccion_sucursal;
 -- 3
 ALTER TABLE Sucursal ADD f_fundacion date;
--- 5
+-- 4
 ALTER TABLE NumRevista DROP COLUMN f_publicacion;
--- 6
+-- 5
 ALTER TABLE NumRevista ADD CONSTRAINT CK_ISSN_numrev CHECK (REGEXP_LIKE(ISSN,'[1-9]{0,3}-[1-9]{0,3}'));
--- 7
+-- 6
 ALTER TABLE Periodista ADD CONSTRAINT CK_apellidos_peri2 UNIQUE (apellidos);
--- 8
+-- 7
 ALTER TABLE Empleado ADD CONSTRAINT CK_nacimiento_emp CHECK (f_nacimiento IS NOT NULL);
 ALTER TABLE Periodista ADD CONSTRAINT CK_nacimiento_per CHECK (f_nacimiento IS NOT NULL);
--- 9
+-- 8
 ALTER TABLE Revista ENABLE CONSTRAINT CK_titulo_rev;
--- 10
+-- 9
 ALTER TABLE Empleado ADD CONSTRAINT CK_DNI_emp CHECK (REGEXP_LIKE(DNI_Empleado,'[1-9]{0,7}[A-Z]$'));
 ALTER TABLE Periodista ADD CONSTRAINT CK_DNI_peri CHECK (REGEXP_LIKE(DNI_Periodista,'[1-9]{0,7}[A-Z]$'));
--- 11
+-- 10
 ALTER TABLE Revista ADD CONSTRAINT CK_titulo_rev2 CHECK (length(titulo) > 3);
--- 12
+-- 11
 ALTER TABLE Revista ADD CONSTRAINT CK_numreg_rev CHECK (REGEXP_LIKE(numreg,'[1-9]{0,5}'));
--- 13
+-- 12
 ALTER TABLE Empleado ADD CONSTRAINT CK_telefono_emp CHECK (REGEXP_LIKE(telefono,'^6'));
 ALTER TABLE Periodista ADD CONSTRAINT CK_telefono_per CHECK (REGEXP_LIKE(telefono,'^6'));

@@ -56,7 +56,7 @@ DELETE FROM NumRevista WHERE cantvendidas = (SELECT min(cantvendidas) FROM NumRe
 
 -- GROUP BY Y HAVING
 -- Muestra el nombre y año de nacimiento (solo el año) del periodista que haya escrito el mayor número de ediciones de revista (en caso de haber dos o más que hayan escrito el mismo número de ediciones, deben aparecer todos)
--- (EN POSTGRESQL DA PROBLEMAS SI PONEMOS EL max(count(dni_periodista)) Y LA ÚNICA FORMA DE SACAR ESTA CONSULTA EN MYSQL ERA ASÍ)
+-- (EN POSTGRESQL DA PROBLEMAS SI PONEMOS EL max(count(dni_periodista)) Y LA ÚNICA FORMA DE SACAR ESTA CONSULTA EN POSTGRESQL ERA ASÍ)
 SELECT nombre as "Nombre", apellidos as "Apellido",
 EXTRACT(YEAR FROM f_nacimiento) as "Año de nacimiento"
 FROM Periodista WHERE dni_periodista IN 
